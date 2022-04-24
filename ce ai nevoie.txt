@@ -1,0 +1,2626 @@
+Quick Links
+Practică – Introducere în programare / Practice – Introduction to Programming
+Practică – Introducere în programare / Practice – Introduction to Programming
+Facultatea de Informatică Iași / Faculty of Computer Science | 2018-2019
+
+Caută după:
+Căutare…
+ 
+STIRI
+ADMINISTRATIV
+CURSURI
+CURS 1. INTRODUCERE
+CURS 2. ELEMENTE DE BAZĂ ÎN C/C++ (I)
+CURS 3. ELEMENTE DE BAZĂ ÎN C/C++ (II)
+LABORATOARE
+LABORATOR 1. EVALUARE INIȚIALĂ
+LABORATOR 2. EXERCIȚII CU DATE SIMPLE
+LABORATOR 3. OPERAȚII PE BIȚI
+BIBLIOGRAFIE
+ENGLISH
+Courses
+Management
+Team
+course: Bogdan Pătruț
+laboratories: Tiberiu Socaciu, Stelian Hadâmbu, Vasile Pojoga, Bogdan Pătruț
+Content and objectives
+general knowledge about programming
+acquiring basic techniques in designing programs
+gradual introduction of C ++, focusing on the implementation of data structures and algorithmic solutions, presented in the Structures of Data course
+acquiring clean-code skills
+the acquisition of independent work techniques, but also in group, for a small project
+understanding open-source practices
+Evaluation
+The discipline has 4 credits and it has a „during the course” evaluation:
+Active laboratory score – this score (from 1 to 10) depends on the active presence in laboratories 2 to 7
+and 9 to 14, on the degree and the way of solving the problems.
+Bonus 0-3 (labs 2 to 7) and 0-5 (labs 9 to 14)
+Written grid test (T), given in the laboratory, with questions from courses and from the first 7 laboratories (the test will be given in week 8);
+Practical project (P) to work at in the final weeks and to be presented in week 14.
+Bonus for interventions during the course Q&A sessions
+For special situations (post-year 3 students, re-enrolled students who did not make discipline Introduction to Programming in previous years (because this was not a discipline in the curriculum), retired students who did not promote the discipline in the years prior to the current academic year: contact prof. Bogdan Patrut.
+1. Programming paradigms, history, compiling and interpreting
+Plan
+Computer programming
+Programming paradigms
+Evolution of programming languages
+C++ characteristics
+Compiling and interpreting. Debugging
+Knowledge assessment test
+Computer programming
+Programming is an IT activity to develop program products, software programs required.
+Programming includes the following activities: product specification, projection, implementation, documentation and maintenance.
+It is a process that leads from formulating a problem (calculus) to an executable program on a computer.
+Related tasks are testing, debugging, source-code maintenance, implementation of the built system, its management etc; they can be considered as part of the programming process,
+but most often they are associated with software development.
+Software Engineering (Programming Engineering) combines engineering techniques with software development practices.
+In software engineering, programming (implementation) is seen as one of the software development process phases.
+There is a permanent debate if writing programs is a form of art, craftsmanship or engineering discipline.
+Programming paradigms
+Programming paradigms  are a way to classify programming languages according to their characteristics.
+
+Characteristics
+Structured programming is a programming paradigm that emerged in the 1970 due to the growing complexity of computer programs It has appeared as a new programming model in order to create new programming techniques capable of producing programs that are safe and durable at the same time.
+Unstructured vs structured programming example.
+Imperative programming, in contrast with declarative programming, is a paradigm that describes calculus as instructions that alter the state of a program. In much the same way that the imperative mood in natural languages expresses commands, an imperative program consists of commands for the computer to perform. Procedural programming is a common method of executing imperative programming, and therefore the two terms are often used as synonyms.
+Declarative programming is a programming style that describes the logic of a calculation, without showing how it was executed; declarative programming is about what needs to be calculated not how is made.
+Functional programming is a programming paradigm that treats calculus as an evaluation of mathematical functions and avoids mutable status and data. Emphasis is placed on the application of functions, as opposed to imperative programming, which mainly uses state changes.
+Logic programming, functional programming, and rule-based programming are part of the declarative programming paradigm.
+Logic programming example.
+Object Oriented Programming  is a programming paradigm, focused on the idea of encapsulation, that is, the grouping of data and code that operates on them in a single structure. Another important concept associated with object-oriented programming is polymorphism.
+Video presentation of programming paradigms
+Evolution of programming languages
+Discussion about evolution of programming languages
+
+
+
+
+
+
+
+
+
+The genealogy tree of programming languages
+
+
+About C++
+History and origins
+It is one of the 2000 programming languages
+C++ origins
+low level programming languages (machine code, assembly languages)
+high level programming languages (C, ADA, COBOL, FOTRAN)
+object oriented programming
+1979: Bjarne Stroustrup – Simula, C with classes … ->
+1983: C++ (compared with C)
+classes
+inheritance
+inlining (inline keywords and Class Member Functions)
+implicit arguments for functions
+strong verification of types
+virtual functions
+overloading functions
+references with symbol &
+keyword const
+1998: STL, C++98 – first C++ standards
+2003, 2005, 2011, 2014 – C++03, C++0x, C++11, C++14
+2017 – a new revision is planned
+Characteristics
+easy to program (less time for writing, shoter and easier to read); debate in classroom
+portable – programms can run on different computers without modifications or with little or no changes
+strongly typed unsafe language (the programmer has to know exactly what to do)
+accepts both explicitly defined and deduced variables
+accepts static verification (at compilation) but also type dynamics (during program execution)
+offers a wide range of programming paradigms
+a very large collection of libraries
+language that accepts more programming paradigms:
+generic: you can use types that will be specified later and will be instantiated as needed
+structured: intuitive control (the order in which the instructions are executed)
+imperative: how (instruction sequences to be executed by the computer)
+object oriented: objects + attributes + procedures (methods)
+declarative: what (what calculations should be made and not how to be made)
+functional: programs seen as evaluating some mathematical functions
+Why C++
+Powerful, flexible (conversions)
+Structured
+Portabiliy (Windows, Apple, Linux, UNIX)
+Efficient, elegant
+Perspectives in other programming languages (discussion)
+Programmer’s language
+Why Code::Blocks ?
+you are accustomed to it from highschool (discussion)
+free
+simple and suggestive editor
+allows automatic code arrangement (Format use AStyle)
+Compiling and interpreting. Debugging
+A source code file can be compiled or interpreted.
+Compilation: the source code is translated by a program (called compiler) into machine code, after which it can be executed
+Interpretation: A program is executed directly from source code through a program (called interpreter) that translates and executes the source code instruction after instruction
+Course example
+Differences between compiler and intrepreter
+No	Compiler	Interpreter
+1	The compiler takes the entire program as input.	The interpreter takes each instruction as input. (It translates instruction with instruction.)
+2	An intermediate object code is generated.	No intermediate object code is generated.
+3	Conditional control instructions run faster.	Conditional control instructions run slower.
+4	Memory needed: Higher (because an object code is generated)	The required memory is reduced.
+5	The program must be compiled every time.	Every time a high-level program is converted into a low-level program.
+6	Errors are displayed after checking the entire program.	Errors are displayed for each interpreted instruction (if any)
+7	Example : C Compiler	Example: BASIC Interpreter
+Video explanation:
+C ++ compilation scheme
+
+
+
+Debugging
+Bug – programming error, hard to grasp
+Compilation errors:
+problems identified by the compiler, generally resulting from violation of syntax rules
+or by misusing data types, memory allocation
+errors in the link-editing phase;
+Runtime Errors: The program does not do what you expect it to do („the computer does what you told it to do, not what you want it to do”
+If programming languages would be vehicles…
+C has been the great multi-functional: compact, powerful, going anywhere and trustful in situations where your life depends on it.
+
+
+
+C ++ is the new C – twice as strong, twice as powerful, working in hostile environments, but if you try to use it without care and without special training, you probably will crash.
+
+
+
+C♯ is C ++ with many security features so that ordinary civilians can use it as well. Looks a little stupid, but it has mostly the same power, as long as you stay close to fuel pumps, car shops, and the comfort of civilization.
+
+
+
+Java is another attempt to improve C. In a way it does its job, but it’s much slower, more voluminous, it pollutes everywhere, and people will think you’re a peasant.
+
+
+
+Knowledge assessment test
+Revision
+Discussion with students
+
+Bibliography
+www.cplusplus.com
+www.tiobe.com/
+en.cppreference.com/
+www.greenteapress.com/thinkcpp/index.html
+ocw.mit.edu/courses/ electrical-engineering-and-computerscience/6-096-introduction-to-c-january-iap-2011/
+kickassinfographics.com/history/ the-evolution-of-computerlanguages-infographic/
+crashworks.org/if_programming_languages_were_vehicles/
+2 – Basic concepts in C++
+Plan
+The alphabet, vocabulary, syntax and semantics of a programming language
+The shape of a simple C++ program, processing directives
+Fundamental data types
+Characters, reserved words
+Variables, expressions, assignments
+Operators
+Boolean expressions
+Constants
+Integer type
+Float type
+Conversions
+
+The alphabet of a programming language:
+Character set
+Any programming language has a certain alphabet at its core. In most cases, the set comprises of:
+
+The English language characters( A-Z, usually both lower and upper cased, summing up to 52 characters)
+Arab numbers( 0-9, 10 characters in total);
+Special characters( , : = < > # $ % + – * / “ ‘ () etc.) whose base meaning differs from language to language.
+Escape sequences / Special characters in C++
+\b Backspace, \t Horizontal Tab, \v Vertical Tab, \n New line, \f New page – formfeed
+ \r Beginning of line, \” Quotation marks, \’ Apostrophe, \\ Backslash, \? Question mark, \a Alarm
+Character Sets Codification Standards
+EBCDIC (Extended Binary Coded Decimal Interchange Code), an 8 bit code, introduce by IBM;
+ASCII (American Standard Code for Information Interchange), introduced by ANSI (American National Standard Institute), is a 7 bit code and can support 128 characters( 95 displayable ones and 33 undisplayable, also known as control characters). Later on, the ASCII set was extended to an 8 bit codification, thus making available up to 256 characters for general use.
+The first 28 characters are from the ASCII standard set, the next 128 are displayable character codes for national European characters (French, Spanish, Romanian etc.), some of the greek alphabet letters, some common mathematical notations, special table drawing characters etc.
+
+The order of the alphabetical characters is based on uniquely assigned numerical codes .
+
+Key Words / Reserved words
+Based on the characters that make up the common language alphabet, we identify words that encompass the whole vocabulary and the speech lexicon and with whose help, other expressions and instructions specific to the language are created. These are divided in two categories:
+
+key words – they have an explicit meaning in a certain context  (I.E. in some programming languages, words that delegate instructions can be used as variable names, leaving out any restrictions: These situations are generally avoided as  they can hide errors in the program’s logic and make it harder to grasp to a new reader);
+reserved words – these words cannot be used other than their main intended purpose ( i.e. in C++). The advantages of using this category of words are as follows:
+The software becomes easier to understand;
+The compilation speed is greatly increased ( lexical, syntactical and semantical analysis is simplified in regards to the search of particular symbols within character tables);
+Errors are easier to identify;
+On the other hand, within the scope of the language, both reserved words and user defined words will be used to refer to different elements (variables, files, procedure names, function names etc.)
+The syntax of a programming language
+Even in the case of programming languages, word sequences constructed by following a certain set of rules can lead up to sentences called instructions. The syntax of a programming language refers to the rule set through which the compiler decides if a certain instruction is correctly written or not. This syntax can be described in numerous ways, one of which being the BNF notation (Backus-Naur Form).
+
+BNF Notation
+The BNF was first used to describe the ALGOL language( within the ALGOL60 report back in 1963) and bears the name of its two authors. In BNF, metasymbols, terminal symbols and non-terminal symbols are used.
+
+Metasymbols are <, >, ½ si ::= and are part of the language description mechanism. The ½ symbol signifies an alternative whereas  ::=  refers to an entity being “defined as such”.
+
+Terminal symbols are words that show up where production requires them to do so (I.E. for, while, do, +, ; etc.).
+
+Non-terminal symbols are found between < and > signs, sdepicting language creations by themselves (I.E. <variable>, <identifier>, <instruction if> etc.).
+
+Example: in C++, the syntax of an identifier is described in BNF as follows:
+
+<identifier>::=<letter>|<identifier><digit>|<identifier><letter>|
+where
+
+<letter>::=a|b|...|z|A|B|...|Z|_
+
+<digit>::=0|1|2|...|9
+The symbol _ is considered <letter> in this context.
+
+Based on these rules, the identifier can also be defined in three other possible ways: An identifier, be it a <letter>, an <identifier> followed by a <digit> or a <literal> (recursive definition). The meaning of a definition is as follows: an identifier can contain a single letter or a letter followed by any number of letters and/or digits. According to this definition, these next identifiers are considered to be adequate: a, t1, sec12a1.
+
+The description of the conditional instruction syntax (if-else) from C++ in BNF notation is as follows:
+
+<instruction if>::= if (<condition>)
+                        <instruction1>
+                     else
+                        <instruction2>
+Semantics of a programming language
+The semantics of an instruction represents the meaning it has, as in what will the computer do when it encounters it.
+
+And so, for the if-else instruction presented above, the <condition> will be evaluated and if it is found to be true ( at the time of the evaluation) then the following instruction will be executed once <instruction1>, respectively <Instruction2> if the value is false.
+
+Your first program in C++, using Code::Blocks
+Setting up Code::Blocks and writing your first program:
+Example of a simple program in C++
+/*
+ * first program in C++
+ */
+#include <iostream>
+int main ()
+{
+  std::cout << "First test 1, 2, 3. ";
+  std::cout << "it's working.. \n";
+  return 0;
+}
+OR
+
+/*
+* first program in C++
+*/
+#include <iostream>
+using namespace std;
+int main ()
+{
+  cout << "First test 1, 2, 3. ";
+  cout << "it's working.. \n";
+  char c;
+  cout << "To exit, press any key!!\n";
+  cin >> c;
+  return 0;
+}
+The outuput will be
+
+First test 1, 2, 3. it's working..
+The sape of a simple program in C++
+/*annotation; it does not interfere the program */
+//preprocess directives
+#include <libraries> (Input/output, math, strings, …)#define 
+//variable declarations
+user types;Variables;Functions;
+....
+// defining user functions ..........
+
+//main function
+int main(){
+..........
+return 0;
+}  //this is where the program ends
+
+Preprocess directives
+Preprocess directive #include
+Syntax:
+
+#include <libraries> (Input/output, math, strings, …)
+Exemple:
+
+#include <iostream>
+#include <math.h>
+#include <stdlib.h>
+#include “my_library.h”
+#include “t1.h”
+Preprocess directive #define
+Syntax:
+
+#define symbol
+
+#define symbol value
+Examples:
+
+#define infinite 1000
+#define pi 3.1415926
+#define then
+#define si &&
+#define daca if
+#define altfel else
+#define max(x,y) x > y ? x : y #define min(x,y) x < y ? x : y
+#include <stdio.h>
+void main()
+{
+   float a,b,c;
+   printf("Give the lenghts of the sides:\n");
+   scanf("%f %f %f",&a,&b,&c);
+   daca ((a>=0) si (b>=0) si (c>=0) si  (a<b+c) si (b<a+c) si (c<a+b))
+        printf("%4.2f, %4.2f  si %4.2f forms a triangle.", a,b,c);
+   altfel
+        printf("It does not form a triangle.");
+}
+Data
+Constants and variables. Expressions
+Within a program, data can be declared as being either constants or variables.
+
+A constant is a data type whose value cannot be modified during the program execution, so essentially it remains constant.
+
+A variable is a data type whose value can is modifiable through different means during the program execution, so it can vary but this is not mandatory. Thus, it can be declared as being a variable within a program, leading to it receiving a value and the said value to remain associated to its respective variable until the program execution will have stopped.
+
+Obviously, when a data type is declared as being constant, a value will be assigned along it, and when a variable will be declared, it is without saying, that for it to be used later on, it will have to receive a value.
+
+Most programming languages assign an initial value to variables, at the same time with their declaration. Thus, string arrays are initialized with the empty string, and numbers are considered to be 0.
+
+Not only constants, but also variables have a certain structure, be it simpler or more complex and a certain nature, give through the association of its possible values. Through variables, a large spectrum of operations can be accomplished, according to their nature and their structure. Therefore, we can state that data can have a certain type.
+
+Certain lexical conventions exist in terms of declaring both constants and variables:
+
+ALL_CAPS for constants
+lowerToUpper for variables with highly suggestive names;
+Expressions
+Most programming languages define expression following a set of syntactic rules, which, in general go like this:
+
+Any constant is an expression;
+Any variable is an expression;
+If E is an expression, then (E), -E, +E, F(E) sare also expressions, where F is the name of an applicable function in regards to E;
+If E1 and E2 are expressions then so are E1+E2, E1-E2, E1*E2, E1/E2 .
+So now, based on the previously mentioned rules we can construct highly complex expressions starting from constants and variables.  Thus, we consider the entity (3+A)*(5/(-B+C)) and we check if it’s an expression or not. Let’s assume that A,B and C are integer variables. Seeing as 3 is a constant, according to the first rule, it is an expression. A, being a variable, is also an expression according to rule 2. Now, if we apply rule 4, 3+A is an expression and (3+A) is also an expression due to rule 3. Following the multiplication (*) sign we have: 5 as an expression due to it being a constant, B,C then –B and –B+C are also expressions. Eventually, according to rule 3 again, (-B+C) is also an expression, thus leading to (5/(B+C)) being an expression and validating the whole statement as being an expression.
+
+Data are characterized by:
+Type
+Name
+Value
+Access Level
+Lifetime
+Operators
+Function calls
+Variables in C++
+Variables declaration
+   typevariable;
+   typevar1,var2, …,varn;
+
+   typevariable=constant_expression;
+
+Global and local variables
+Global variables: their declaration is made at the beginning of the program, outside any function
+
+Local variables: their declaration is made inside the body of a function, at the beginning.
+
+Exemplification
+char c;
+signed char sc;
+
+int a, b;
+a = b = 5;
+
+int i;
+int sum = 0;
+long j;
+
+float x1,,x2, x3;
+float pi = 3.14;
+double y;
+
+int square(int y)
+{  
+      int x;  x=y*y; 
+      return x; 
+}
+Variable x is characterized by:
+Type = int
+Name = x
+Value = 4
+Access level: square function
+Lifetime = during one function call
+Variable assignation
+variable = expression;
+
+OR
+
+Lvalues (left-side) = Rvalues (right-side)
+
+Lvalues are variables
+Rvalues are expressions
+Example
+
+In this assignation
+
+distance = rate * time;
+we have: Lvalue: „distance” and Rvalue: „rate * time”
+
+Counterexample for Lvalue: 5+5, “str”, const int i
+
+When assigning, two other problems are raise, but we will talk about them later:
+
+Compatibility
+Conversions
+Variable types and their visibility
+
+
+Data types
+Data types means a set of values, together with the operations that can be executed with them.  At declaration, each variable will be associated with a certain type. A constant type can be implicitly defined from the constant value, or it can be explicitly specified, similarly to variables. Thus, if K constant has the numeric value 7, we can say that it is an integer, or a float, not a logical type or a string array.
+
+However, there are languages that have some conventions, for example, any number different from zero is considered to be True, as a Boolean variable, whereas zero has the value False.
+
+Some programming languages allow declaration of variables without specifying their type, thus considering having a general type. So, when the variable will be used, it will be assigned the most adequate type, in that situation. If a variable X is declared, and at some point the value 3 is assigned to it, its type would be considered numeric. Subsequently, if X will be assigned the value “abc”, that means a string array, then, X will be a string array.
+
+Expressions are formed based on constants and variables. Of course, when forming expressions, operators will be used, also those functions, allowed by the value types they operate on. Small expressions can lead to large expressions, that are growing in complexity.
+
+Type domain (object collection) – the set of values for which a certain memory representation was used
+
+Type operations = operations which can be executed using values of that data type
+
+Data types categories:
+Standard data types
+Low-level structured data types – operations are executed at component level
+High-level data types – operations are implemented by user algorithms
+Standard data types in C++
+Character types:  char types , signed char, unsigned char
+Integer types: character types,signed integers, unsigned integers, enum types
+Float types: integer and float types
+Arithmetic types: float and integer types
+Basic types: character, unsigned and signed integers, float
+Void types: represents a void set
+(32 bit)
+
+
+
+Equivalent data types
+signed short int ≡ short
+unsigned short int ≡ unsigned short
+signed int ≡ int
+unsigned int ≡ unsigned
+signed long int ≡ long
+unsigned long int ≡ unsigned long
+Derived data types
+Those are built from objects, incomplete types and functions
+
+array type of T (elements of type T)
+structure type
+union type
+function type, derived from the returned type T , parameters number and types (function that returns T)
+pointer type, derived from a referenced type (function type, object type, incomplete type). Pointers type values are referenced to an entity of the type referenced. (pointer to T)
+scalar type: arithmetic and pointer types
+aggregate types: tablouri şi structuri
+Un tablou de dimensiune necunoscută, o structură sau uniune cu conţinut necunoscut sunt tipuri incomplete
+Integer types
+Integer constants
+Octals: preffix 0 (zero), for example: 032 = 26   și    077 = 63
+Hexadecimals: preffix 0x or0X, for example: 0x32 = 50 și 0x3F = 63
+„long” integers: have the suffix l or L, for example: 2147483647L și 0xaf9Fl = 44959
+„unsigned” integers have the suffix u or U, for example: 345u și 0xffffu = 65535
+Characters with apostrophe: ‘A’, ‘+’, ‘n’
+Decimal characters: 65, 42
+Octal characters: ’\101’, ‘\52’
+Hexadecimal characters: ‘\x41’, ‘\x2A’
+Special characters – escape sequences
+Operations and functions for integer types
+Operations for integer types: + – * / % == != < <= > >= ++ —
+
+Functions:
+
+from float types
+from library: tolower, toupper, isalpha, isalnum, iscntrl, isdigit, isxdigit, islower, isupper, isgraph, isprint, ispunct, isspace
+Operators
+
+
+
+Operators ++ and —
+
+They are applied only to an expression that represents a memory object (L-value):
+
+
+
+Other examples:
+
+++5 –(k+1) ++i++ have no sense
+(++i)++ has sense
+
+Float type (real)
+float
+Simple precision real numbers
+sizeof(float) = 4
+10^-37<=abs(f)<=10^38
+6 significant digits
+double
+Double precision real numbers
+sizeof(double) = 8
+10^-307<=abs(f)<=10^308
+15 significant digits
+long double
+„Extra” double precision real numbers
+sizeof(long double) = 12
+10^-4931<=abs(f)<=10^4932
+18 significant digits
+Limits are found in <float.h>
+
+Operations: + – * / == != < <= > >=
+
+Real constants
+Real numbers are implicitly double:
+ 125.435 1.12E2 123E-2 .45e+6 13. .56
+ 1.12E2 = 1.12 x 102 = 112
+ 123E-2 = 1.12 x 10-2 = 1.23
+ .45e+6 = 0.45 x 106 =450000
+ 13. = 13.00 şi .56 = 0.56
+To be float it must have suffix f or F
+ .56f 23e4f 45.54E-1F
+ 23e4f = 23 x 104 = 230000.00
+To be long double it must have suffix l or L
+ 123.456e78L
+Functions (in library math.h):
+
+sin, cos, tan, asin, acos, atan, sinh, cosh, tanh, exp, log, log10, pow, sqrt, ceil, floor, fabs, ldexp, frexp, modf, fmod.
+Booleene data (logical)
+Bool type
+Value domain: {false, true}
+false = 0
+true = 1, but also any non-null integer
+Operations: ! && || == !=
+Possible declarations:
+ bool x = 7; // x becomes “true”
+ int y = true; // y becomes 1
+Logical expressions
+relational_expression ::= expr < expr | expr > expr | expr <= expr | expr >= expr | expr == expr | expr != expr expresie_logica ::= ! expr | expr || expr | expr && expr
+
+The value of relational expressions
+
+
+Logical negation
+! 0 = 1, ! any_nr_different_from_0 = 0
+
+Logical disjunction. The value of logical expressions ||
+
+
+Logical conjunction. The value of logical expressions &&
+
+
+Examples
+A condition of this type a ≤ x ≤ b is written in C++ as follows:
+
+(x >= a) && (x <= b) (a <= x) && (x <= b)
+A condition of this type a > x or x > b is written in C++ as follows:
+
+(x < a) || (x > b) !(x >= a && x <= b)
+De Morgan’s laws
+! (A && B) is equivalent with !A || ! B
+! (A || B) is equivalent with ! A && ! B
+Void type
+Conversion of an expression in void type means that its value is ignored
+Used for pointer type; no type control is made to a pointer of type void
+Used for functions with no returned value or for functions without parameters
+It is an incomplete type which cannot be assigned a value
+Structures. Using typedef 
+Typedef is a mechanism with which a type is associated to an identifier:
+
+typedef char big_letter;
+typedef short age;
+typedef int vector[20];
+typedef char string[30];
+typedef float matrix[10][10];
+typedef struct { double re, im; } complex;
+That identifier can be used to declare variables:
+
+big_letter u, v=‘a’;
+age v1, v2;
+vector x; string s;
+matrix a;
+complex z;
+or functions
+
+complex sum(complex z1, complex z2) { 
+  complex z; 
+  z.re=z1.re+z2.re; z.im=z1.im+z2.im; 
+  return z;
+}
+Conditional operator ? :
+Syntax
+exp1 ? exp2 : exp3
+
+Semantics 
+exp1 is evaluated
+If exp1 has a true value (non-null), then the value of the expression is the value of exp2; exp3 is not evaluated
+If exp1 has a false value (null), then the value of the expression is the value of exp3; exp2 is not evaluated
+Operator ?: is associative
+Examples
+x >= 0 ? x : y
+x > y ? x : y
+x > y ? x > z ? x : z : y > z ? y : z
+game=(response==’1’)?SimpleGame();DoubleGame();
+#include <iostream>
+using namespace std;
+void main(){
+   int a=1, b=2, c=3;
+   int x, y, z;
+   x = a?b:c?a:b;
+   y = (a?b:c)?a:b; /* left association */
+   z = a?b:(c?a:b); /* right association */
+   cout<< "x=" << x << "\ny=" << y << "/nz="<< z;
+}
+/* x=2 y=1 z=2 */
+Comma operator ,
+Syntax
+comma_expression ::= expression, expression
+
+Semantics
+The first expression is evaluated, then the second one.
+Valoarea şi tipul întregii expresii este valoarea şi tipul operandului drept.
+The value and type of the whole expression is the value and type of the right operand.
+Example
+a = 1, b = 2;
+i = 1, j = 2, ++k + 1;
+k != 1, ++x * 2.0 + 1;
+for(sum = 0, i = 1; i <= n; sum += i, ++i);
+Operator sizeof()
+sizeof() is a single operator that allows finding out the number of bytes an object can be represented on (a type or an expression)
+
+Examples:
+sizeof(int), sizeof(double);
+sizeof(b*b-4*a*c), sizeof(i);
+sizeof(char)<=sizeof(short)<=sizeof(int)<=sizeof(long)
+sizeof(signed)=sizeof(unsigned) = sizeof(int)
+sizeof(float)<=sizeof(double)<=sizeof(long double)
+
+Use:
+#include <iostream>
+using namespace std;
+void main(){
+  int x = 1; double y = 9; long z = 0;
+  cout << "Operator sizeof()\n\n\n";
+  cout << "sizeof(char) = " << sizeof(char) << endl;
+  cout << "sizeof(int) = " << sizeof(int) << endl;
+  cout << "sizeof(short) = " << sizeof(short) << endl;
+  cout << "sizeof(long) = " << sizeof(long) << endl;
+  cout << "sizeof(float) = " <<sizeof(float) << endl;
+  cout << "sizeof(double) = " << sizeof(double) << endl;
+  cout << "sizeof(long double) = " << sizeof(long double) << endl;
+  cout << "sizeof(x +y + z) = " << sizeof(x+y+z) << endl;
+}
+The result of execution in Visual C++:
+
+Operator sizeof()
+
+sizeof(char) = 1
+sizeof(int) = 4
+sizeof(short) = 2
+sizeof(long) = 4
+sizeof(float) = 4
+sizeof(double) = 8
+sizeof(long double) = 8
+sizeof(x + y + z) = 8
+Table with operators priority and associativity
+
+
+Rules for implicit conversion
+In the absence of an unsigned, the objects are converted to the „highest” type in the list (descending):
+
+long double, double, float, long int, int
+
+Rules for unsigned operands are depending on implementation.
+
+Conversion to unsigned is made only when needed(I.E. the value from unsigned does not „fit” in the other operand)
+
+The rule “integer promotion” : Operations are made at least in int, so char and short are „promoted” to int.
+
+To an assignation (v = exp) the type of the right term is converted in the right term’s type (which is the result’s type).
+
+WARNING! Things that can happen:
+
+Loss of precision (double ->float ->long int)
+Loss of significant bits (long ->int)
+Indeterminations
+Examples of implicit conversions
+
+#include <iostream>
+using namespace std;
+int main(void){
+   char c1 = -126, c2;          /* c1 = 10000010    */
+   unsigned char c3, c4 = 255;  /* c4 = 111111111   */
+   short s1, s2 = -32767; /* s2=10000000 00000001   */
+   short s3 = -1, s4;     /* s3 = 11111111 11111111 */
+   s1 = c1;
+   cout << "c1=" << (int)c1 << " s1=" << s1 << endl;
+   c2 = s2;
+   cout << "c2=" << (int)c2 << " s2=" << s2 << endl;
+   c3 = s3;
+   cout << "c3=" << (int)c3 << " s3=" << s3 << endl;
+   s4 = c4;
+   cout << "c4=" << (int)c4 << " s4=" << s4 << endl;
+   return 0;
+}
+Example (execution result)
+
+
+
+ 
+
+ 
+
+Forcing type – cast
+Explicit conversion to nametype type can be made as follows::
+(nametype) expresie
+
+Example:
+(long)(‘A’ + 1.0)
+(int)(b*b-4*a*c)
+(double)(x+y)/z
+(float)x*y/z
+x / (float)2
+cast example
+#include <iostream>
+using namespace std;
+int main(void){
+   int i, j; double x, y, z, t;
+   i = 5/2; x = 5/2;
+   y = (double)(5/2);  j = (double)5/2;
+   z = (double)5/2;   t = 5./2;
+   cout << i << ", " << x << ", ";
+   cout << y << ", " << j << ", ";
+   cout << z << ", " << t << ", " << endl;
+   return 0;
+}
+/* 2, 2, 2, 2, 2.5, 2.5 */
+Files in library relative to types
+<limits.h>
+
+for integer types
+min/max integer: INT_MIN, INT_MAX
+Number of bits per character CHAR_BIT
+Etc.
+<float.h>
+
+for float types:
+Maximum exponent
+Decimal precision, etc.
+<stdlib.h>
+
+has conversion functions:
+Character array in int: atoi(const char*)
+Character array in int float: atof(const char*)
+Knowledge assessment test
+Revision
+Student discussion
+
+Knowledge assesment test
+Formular Google Forms
+
+Plan
+Input-output
+Instructions
+Functions
+
+Input / output
+General formula
+cin >> var;   /* reads var from cin */
+Arithmetic types, character arrays can be retrieved
+cout << expr;   /* writes expr to cout */
+Arithmetic types, character arrays, pointers of any type except char can be transferred.
+Multiple operations of the following type are posibile:
+cin >> var1 >> var2 ... >> varN; 
+
+cout << var1 << var2 ... << varN;
+
+
+Input/ output: example- characters
+
+
+Input/ output: example– ASCII codes
+On the blackboard there are some explanations regarding ASCII codes and sorting character arrays in different programs.
+
+Special codes: 7 (BELL), 10 LF (Line Feed), 13 CR (Carriage Return), 27 ESC (Escape), 32 Space, 33 !, …., 48 ‘0’, …, 65 ‘A’, 66 ‘B’,… , 97 ‘a’, 98 ‘b’,… .
+
+
+
+
+
+Statements
+
+
+Expression statement
+Syntax:
+
+
+Semantics:
+
+The expression is evaluated.
+If an expression is in the form of an assignment statement, variable=expression, then the variables gets the value of the right statement, the old value being lost.
+If an expression is in the form variable op = expression, this is equivalent to variable=variable op expression, where op is an operator from the {+, -, *, /, %} set.
+If an expression is in the form variable++ or ++variable, this is equivalent to variable=variable+1.
+If an expression is in the form variable– or –variable, then this is equivalent with variable=variable-1.
+Example:
+
+a = b;
+a + b + c;
+;
+cout << a;
+sizeof(int);
+Block statememt
+Syntax:
+
+
+
+Groups instructions/declarations in an executable unit.
+A composed instruction is itself an instruction: where an instruction may appear, is it correct to have a composed instruction.
+Semantics:
+
+Every instruction/declaration is executed one time, from up to down and from left to right.
+There is no return to any of the instructions/declarations from before.
+Examples:
+
+{
+  int a=3, b=10, c=7;
+  a += b += c;
+  cout << a << ", " << b <<  ", " << c; // ?, ?, ?
+}
+
+if (x > y){
+   int temp;
+   temp = x; x = y; y = temp;
+   cout << x << y;
+}
+
+{
+   int a, b, c;
+   {
+      b = 2; c = 3; a = b += c;
+   }
+   cout << "a= " << a <<endl;
+} // ?
+Conditional statements: if and if-else
+Syntax:
+
+if_statement ::=  if (<boolean_expression>)
+               {<statement1>;}
+
+if_else_statement ::=  if (<boolean_expression>)
+                     {<statement1>;}
+                    else
+                     {<statement2>;}
+boolean_expression is build using:
+
+Arithmetic expressions
+Comparators:  ==, !=, <, <=, >, >=
+Logical connectors: &&, ||, !
+Semantics:
+
+The boolean_expression is evaluated (one single time).
+If this is true, then statement1, is executed.
+If this is false, then, if else branch is present, statement2 is executed.
+Examples:
+
+if(length== width) 
+  squareArea= length*width;
+if (a % 2) if (b % 2) p = 1; else p = 2; // with whom is grouped „else”?
+if(a%2) { if(b%2) p = 1;} else p = 2;
+if (firstNumber< secondNumber) 
+  minimum = firstNumber;
+else
+  minimum = secondNumber;
+int first, second, third, fourth, maximum;
+if(first>second)
+   if(third>fourth)
+      if(first>third) maximum = first;
+      else maximum = third;
+   else
+      if(first>fourth) maximum = first;
+      else maximum = fourth;
+else
+   if(third>fourth)
+      if(second>third) maximum = second;
+      else maximum = third;
+   else
+      if(second>fourth) maximul = second;
+      else maximum = fourth;
+“Dangling else” problem
+Rule:
+
+The rule is: else is attached to the closest if.
+
+int a=1, b=2; // b=3 if (a == 1) if (b == 2) // b=2 cout << „*****\n”; else cout << „ooooo\n”;
+
+Do not let the code trick you!
+Be careful to the differences between equality and assignment operators.
+if ( condition-1 ) {
+      instructions-1;
+  }
+else if ( condition-2 ) {
+      instructions-2;
+  ...
+  }
+else if ( condition-n ) {
+      instructions-n;
+  }
+else {
+      instructions-for-the-rest-of-possibilities;  
+  }
+Example:
+
+int main(void){
+    float operand1, operand2, rezultat;
+    char operator;
+    cout << "Expression:(number operator number – FARA SPATII)\n";
+    cin >> operand1 >> operator >> operand2;
+    if(operator == '+')
+          result= operand1+operand2;
+    else if(operator == '-')
+          result= operand1-operand2;
+    else if(operator == '*')
+          result= operand1*operand2;
+    else if(operator == '/')
+          result= operand1/operand2;
+    else{
+         cout << "Error in writing the expression!";
+         return 1;
+    }
+    cout << "The result is: " << result<< "\n";
+    return 0;
+}
+Switch statement
+Syntax:
+
+switch (expression)
+{
+  case constant1:
+     instruction group 1;
+     [break;] (break is optional)
+  case constant2:
+     instruction group 2;
+     [break;]
+  .
+  .
+  .
+  [default:
+     implicit group of instructions] (default is optional)
+}
+Semantics:
+
+expression is evaluated.
+If it has the value constant1, then the group of instructions 1  is executed, eventually the group of instructions 2, etc., until the first break.
+If it has the value costant2, then the group of instructions2 is executed etc., until the first break.
+…
+In case the expression is not equal with contant1, nor constant2, and the implicit group of instructions is present, then that is the thing that gets executed.
+Example:
+
+
+
+The value of expression, which is of type int, is compared with the constants.
+In case of equality, the required instruction and the ones that follow are executed. There is the posibility of exiting with the break instruction.
+If the value determined is different from all of the specified constants, the default instruction is executed, which appears only a single time, not necessarily at the end. If default is missing, switch is exited.
+The constant’s values must be different; their order is not important.
+The braces that group the case sets are mandatory. After each case, more instructions can appear without them being grouped in braces.
+int i;
+cin >> i;
+
+switch(i){
+  case 1: cout << " 1";
+  case 2: cout << " 2";
+  case 3: cout << " 3"; // break;// ???
+  case 4: cout << " 4";
+  default: cout << " blabla! ";
+//3
+
+
+char eval;
+cin >> eval;
+switch (eval) {
+  case 'A':
+  case 'a': 
+  cout << "Excellent: you got an \"A\"!\n";     
+  break;
+  case 'B':
+  case 'b':     
+  cout << "Good: you got a \"B\"!\n";     
+  break;
+  }
+
+
+While statement
+Syntax:
+
+
+
+Semantics:
+
+The expression (expresia)  is evaluated (condition).
+If it is null/not true, we go to the next_instruction (instructiunea_urmatoare).
+If it is true, the instruction is executed and the cycle is retaken, testing again de value of expression (!=0) etc.
+So, while expression  is true, the instruction is executed.
+int n, i=1, factorial=1;
+cin>>n;
+while (i++ < n)
+      factorial *= i;
+cout<<factorial;
+do-while statement
+Syntax:
+
+
+
+Semantics:
+
+instruction (instructiune) is executed.
+condition (conditie) is evaluated: if its value is nonzero, the control is transferred back to the beginning of do..while instruction; if the value is null, next_instruction(instructiunea_urmatoare) is executed.
+Thus, instruction (instructiune)  is executed one or more time(s).
+
+Example
+
+unsigned long n;
+  do {
+    cout << "Enter number (0 to end): ";
+    cin >> n;
+    cout << "You entered: " << n << "\n";
+  } while (n != 0);
+  return 0;
+
+
+ 
+
+Example – calculator
+
+int main(void){
+    float operand1, operand2, rezultat;
+    char operator, raspuns;
+    int ERROR;
+    cout << "Calculator pentru expresii de forma \n operand1 operator operand2\n";
+    cout << "Folositi operatorii + - * / \n";     
+do{
+       ERROR = 0;
+       cout << "Dati expresia: ";
+       cin >> operand1 >> operator >> operand2;
+       switch(op){
+         case '+': rezultat = operand1+operand2; break;
+         case '-': rezultat = operand1-operand2; break;
+         case '*': rezultat = operand1*operand2; break;
+         case '/': if(y != 0) rezultat = operand1/operand2;
+                   else {cout << "Impartire prin zero!\n"; ERROR = 1;}
+                   break;
+         default : {cout << "Operator necunoscut!\n"; ERROR = 1;}
+       }
+       if(!ERROR)
+          cout << operand1 << " " << operator << " " << operand2 << " = " << rezultat;
+       cin.sync();
+       do{cout << "\n Continuati (d/n)?"; raspuns = getchar();
+       } while (raspuns != 'd' && raspuns != 'n');
+  } while (raspuns != 'n');
+  cout << "La revedere!\n";
+  return 0;
+}
+for instruction
+Syntax:
+
+
+
+One, two or all three expressions can be missing, but the two separators (;) are mandatory.
+
+Semantics
+
+If instructiune does not contain continue and expr-cond is present, then for is equivalent to: expr-init;
+while(expr-cond){   instructiune;   expr-in/decrementare;}
+next_instruction (instructiunea_urmatoare)
+If continue exists, then this transfers the control to expr-in/decremenatare.
+expr-init is evaluated–  in general, this is used for initializing the iteration.
+expr-cond is evaluated- in general this is a logical expression which is used for iteration control. If its value is nonzero (true), the loop’s body do is executed (instructiune), expr-in/decrementare is evaluated and the control is passed to the beginning of the do loop, without evaluating expr-init.
+In general expr-in/decrementare makes the transition to the next iteration: modifies a variable that is a part of the expr-cond.
+The process continues until the value of expr-cond  is null (false). The control is transferred to the next instruction (the one after for)
+
+
+Examples:
+
+i = 1;
+suma = 0;
+for(;i <= N;++i) suma += i;
+
+i = 1;
+suma = 0;
+for(;i <= N;) suma += i++;
+
+i = 1;
+suma = 0;
+for(;;) suma += i++; // Bucla infinita
+Sequence break instructions
+break;
+refers to the closest loop or switch instruction.
+it produces the exit from loop or switch and transfers the control to the next instruction.
+continue;
+refers to the closest loop (for, while, do..while).
+interrupts the current iteration execution and transfers the control to the next iteration.
+goto;
+Allows a jump to another program section, identified by the beginning point.Permite saltul la o anumită secțiune din program, identificată prin punctul de începere.
+return expr;   or return;
+Examples:
+
+int n;
+  for (n=10; n>0; n--)
+  {
+    cout << n << ", ";
+    if (n==3)
+    {
+      cout << "countdown aborted!";
+      break;
+    }
+  }
+for (int n=10; n>0; n--) {
+    if (n==5) continue;
+    cout << n << ", ";
+  }
+  cout << "FIRE!\n";
+int n=10;
+  loop:
+  cout << n << ", ";
+  n--;
+  if (n>0) goto loop;
+  cout << "FIRE!\n";
+  return 0;
+int i, suma=0;
+for(i = 1; i<=N; i++){
+   if(i%3 != 0) continue;
+   suma+=i;
+   }
+cout << “suma = ” << suma; /* suma multiplilor de 3 până la N */
+Iteration instructions – recommandation
+For the control expression of the iteration, relational operators are recommended instead of th equality ones.
+int main(){
+   int contor = 0;
+   double suma = 0.0, x;
+   for(x = 0.0; x != 9.9; x += 0.1){
+       suma += x; 
+       ++contor;
+   }
+   cout << "suma = " << suma << ", contor= " << contor << "\n";
+   return 0;
+}
+
+
+Folositi x < 9.9 in loc de x != 9.9
+3. Functions, arrays and pointers
+Functions
+Definition of a function
+
+
+Function call:
+
+
+Arguments are expressions that substitute parameters in a call: function parameters are initialized with the values of the arguments.
+Example 1:
+
+We define a function that computes (returns) for a natural number n, the sum of the first n natural numbers.
+
+Iterative way (repetitive): suma: Z -> Z, suma(n)=1+2+3+…+n
+
+int suma(int n)
+{
+  int s = 0;
+  int i;
+  for(i=1; i<=n; ++i)
+    s += i;
+  return s;
+}
+Recursive way: suma: Z -> Z, suma(n)=1+2+3+…+n
+
+int suma(int n)
+{
+  if (n==0) 
+     return 0;
+  else
+     return n+suma(n-1);
+}
+Example 2 – What’s happening?
+
+void swap(int x, int y){
+   int temp = x; x = y; y = temp;
+   cout << "x=" << x<< ",y=" << y<< "\n";
+}
+
+int main(void){
+   int a = 2, b = 3;
+   swap(a, b);   // x = 3, y = 2
+   cout << "a=" << a<< ",b=" <<b <<"\n";
+   // a = 2, b = 3
+Example 2 – What’s happening?
+
+void swap(int& x, int& y){
+   int temp = x; x = y; y = temp;
+   cout << "x=" << x<< ",y=" << y<< "\n";
+} 
+int main(void){
+   int a = 2, b = 3;
+   swap(a, b);   // x = 3, y = 2
+   cout << "a=" << a<< ",b=" <<b <<"\n";
+   // a = 3, b = 2
+Passing parameters
+Global and local variables
+Explanations on example, in classroom
+
+
+
+Parameters passed by value
+
+
+Parameters passed by reference
+
+
+Returning a value using the parameter passed by reference  – „procedures”
+
+
+Returning a value with return „with function type”
+
+
+Examples:
+Write a function that verifies if the binary representation of a number x is palindrome: bool isPalindrome(unsigned int x).
+#include<iostream>
+ using namespace std;
+
+// This function returns true if the k'th bit from x is 1(is set).
+ // For example, if number is (0010) 2 and k is 2, then it returns true.
+ bool isKthBitSet(unsigned int number, unsigned int k)
+ {
+    return (number & (1 << (k-1)))? true: false;
+ }
+
+// This function returns true if the binary representation of x is palindrome
+ // For example, (1000...001) is paldindrome.
+ bool isPalindrome(unsigned int number)
+ {
+    int left = 1; // Initialize the position from left.
+    int right = sizeof(unsigned int)*8; // Initialize the position from right.
+
+    // Compare bits one by one.
+    while (left < right)
+    {
+       if (isKthBitSet(number, left) != isKthBitSet(number, right))
+          return false;
+       left++; right--;
+    }
+    return true;
+ }
+
+// Test program of the above function
+ int main()
+ {
+    unsigned int x = 1<<15 + 1<<16;
+    cout << isPalindrome(x) << endl;
+    x = 1<<31 + 1;
+    cout << isPalindrome(x) << endl;
+    return 0;
+ }
+2) Write a recursive function that computes the factorial of a natural number n.
+
+Plan
+One-dimensional arrays, declaration, names, initialization
+Array storing, their use as function arguments
+Character arrays, macros and functions for arrays
+Two-dimensional arrays
+Pointers, pointer expressions, pointer arithmetics
+Arrays
+Collection of variables of the same type, being called with the same name – array components
+Components are identified and accessed with the help of indices
+An array uses contiguous memory locations, in indices order
+Arrays:
+One-dimensional (1 – dimensional): character arrays
+Two-dimensional (2 – dimensional)
+One-dimensional arrays
+type nameArray[dimension];
+
+necessary_bytes = sizeof(type)* dimension
+
+#define NMAX 25
+
+int a[NMAX]; // int a[25];
+
+
+Storing order– indices order: 0, 1, …, NMAX-1;
+Array elements– in contiguous memory locations (side by side);
+Operations are made using components, with for, while or do-while iterations:
+   for (i=0; i<n; i++) a[i]=0; 
+   for (i=0; i<n; i++) c[i]=a[i]+ b[i];
+
+
+Name of an array
+Name of an array:
+variable name;
+pointer to the first element of the array:
+       a       equivalent to &a[0]      *a  equivalent to  a[0]
+
+       a+1 equivalent to &a[1]       *(a+1) equivalent to  a[1]
+
+       a+2 equivalent to &a[2]      *(a+2) equivalent to  a[2]
+
+       a+i equivalent to &a[i]         *(a+i) equivalent to  a[i]
+
+Initialization of a one-dimensional array
+
+
+Storing an array
+
+
+Iterate through an array
+We have an array of a numbers. We wish to compute the sum of its elements, after we initialized the sum with 0. We can iterate through array a, using multiple ways.
+
+
+
+Arrays as function arguments
+An array CANNOT be passed ENTIRELY as an argument to a function.
+Arrays are passed as arguments using a pointer to an array.
+The formal parameter of a function that has an array can be declared as:
+Pointer
+Array with dimension
+Array without dimension
+Example 1
+Let’s consider that we have an array i and we call a function functia with the argument i.
+
+In this case, functia can have one or more of the following headers, in which the argument can be: pointer to an integer, an array with a specified number of integer elements, an array with an unspecified number of integer elements.
+
+
+Example 2
+In this example, the function insert_sort  has an array with an unspecified number of integer elements as argument.
+Because argument a[]  is equivalent to pointer *a, the function will modify the elements of array a, making an insertion sort of the elements of a, having n elements.
+
+
+Example 3
+In this example, we suppose that function suma will compute the sum of the n elements of array a.
+We can have the header of the function in two ways. The first argument is either a[], either *a, so a pointer to the beginning of the array.
+
+In the first call, suma(v,100), the function will compute the sum of the 100 elements in the array, starting with the element on position 0 (and finishing with the element on position 99).
+In the second call, suma(v,8), it will compute the sum v[0]+v[1]+…+v[7].
+In the third call, the first argument is the address of the element on position 4 in the array, so the sum will be calculated as v[4]+v[5]+… + v[k-6-1+4] (total k-6 elements).
+In the fourth call, the first argument (v+4)  is equivalent to the argument &v[4], that means it will also compute v[4]+v[5]+… .
+Character arrays
+Character arrays are one-dimensional arrays of type char.
+Each element of the array is a character.
+The last character of the array is the null character ‘\0’. It marks the end of the array.
+Example:
+char sir[10];
+This is a declaration of a 9 character array (sir[0], sir[1]…, sir[8]), to which  it is added sir[9], that will mark the end of the array.
+The 10th character is the null character ‘\0’ (or NULL or 0).
+Array declaration
+
+
+Array declaration with initialization
+
+
+Assigning and comparing character arrays
+Asigning “=” only at declaration:
+char sir[10];
+sir = "Hello";// wrong
+char sir[10] = "Hello";// OK
+Comparation is not possible with “==” operator
+char sir_unu[10] = "white";
+char sir_doi[10] = "black";
+sir_unu == sir_doi;   // warning: operator has no effect
+A function strcmp is used
+strcmp(s,t) will return  0, if s and t are identical, a number <0, if s is lexicographic before t, a number >0, if s is lexicographic after t.
+Macros and functions for arrays
+
+
+Two-dimensional arrays
+tip numeTablou[m][n];
+int a[m][n];
+Contiguous memory of m×n locations
+Components are identified using 2 indices:
+First index has values{0, 1, …, m -1}
+Second index has values {0, 1, …, n -1}
+The component variables: a[0][0], a[0][1], …, a[0][n-1], a[1][0], a[1][1], …, a[1][n-1], …, a[m-1][0], a[m-1][1], …, a[m-1][n-1]
+The order of storing the components is given by the lexicographic order of indices
+
+
+In the figure above, a is of type int[2][3], a[0] is of type int[3], a[1] is of type int[3], and each element in the matrix is of type int.
+Iterating through a two-dimensional array
+double a[MMAX][NMAX]; // declaration of two-dimensional array. 
+
+double suma;  // sum of array elements
+
+/* . . . */
+
+for (i = 0; i < m; i++)
+    for (j = 0; j < n; j++)
+        cin >> a[i][j];
+
+suma = 0;
+for (i = 0; i < m; i++)
+    for (j = 0; j < n; j++)
+         suma += a[i][j];
+Two-dimensional arrays
+With the analogy from matrix, a 2-dimensional array can be seen as a 1-dimensional array with each component being a 1-dimensional array.
+Notation:
+a[0][0], a[0][1], …, a[0][n-1],…, a[m-1][0], a[m-1][1],…, a[m-1][n-1]
+
+Two-dimensional arrays seen as one-dimensional arrays
+
+
+Accessing elements of a 2-dimensional array
+
+Expressions equivalent to a[i][j]
+
+
+Two-dimensional arrays as arguments
+int minmax(int t[][NMAX], int i0, int j0,
+        int m, int n)
+{
+  //...
+}
+
+/* usage */
+if (minmax(a,i,j,m,n))
+{
+   // ... 
+}
+Array initialization (vectors, arrays, matrices)
+int a[] = {-1, 0, 4, 7};
+/* equivalent to */
+int a[4] = {-1, 0, 4, 7};
+char s[] = "un sir";         /* equivalent to */
+char s[7] = {'u', 'n', ' ', 's', 'i', 'r', '\0'};
+int b[2][3] = {1,2,3,4,5,6}  /* equivalent to */
+int b[2][3] = {{1,2,3},{4,5,6}} /*equivalent to*/
+int b[][3] = {{1,2,3},{4,5,6}}
+Pointers
+Pointer = variable that contains a memory address, which is a localization of an object (often other variable)
+Offer the possibility of modifying the function call arguments
+Allow dynamic allocation
+Can improve efficiency of some routines
+Uninitialized pointers
+Pointers that contain inadequate values
+Declaration of a pointer variable:
+type*name_pointer;
+
+name_pointer is a variable that can have as values, memory addresses which contain values with the base type type.
+Examples:
+int *p, i;  // int *p; int i;
+p = 0;
+p = NULL;
+p = &i;
+p = (int*) 232;
+Semnification of p = &i;
+
+p “points to i”, “cointains/ receives the address of i”, “refers to i”.
+The opreator of dereferencing (indirection) * :int *p;
+
+p is pointer, *p is/ receives the value of the variable that has address p
+The direct value of p is the address of a location, and *p is the indirect value of p: which is stored in that location
+
+int a = 1, *p;
+
+p = &a;
+
+
+
+because it stores addresses, the length of memory locations do not depend on the type of the associated variable
+sizeof(int*) = sizeof(double*) = …
+
+pointer display:
+
+
+Pointer expressions
+
+#include <iostream>
+using namespace std;
+int main(void){
+    int i=5, *p = &i;
+    float *q;
+    void *v;
+    q = (float*)p;
+    v = q;
+    cout << "p = " << p << ", *p = " << *p << "\n";
+    cout << "q = " << q << ", *q = " << *q << "\n";
+    cout << "v = " << v << ", *v = " << *((float*)v)<<"\n";
+    return 0;
+}
+
+
+Pointer arithmetics
+
+
+
+Video presentation of the link between pointers and arrays
+https://youtu.be/ASVB8KAFypk
+
+4. Graphics
+1. WinBGIm graphics  library
+The WinBGIm graphics library can be downloaded here :
+
+winbgim.zip
+
+Warning: on the web you will find other variants of this archive, but not functional.
+
+After downloading and removing the files from this archive, you will do the following:
+
+Extract the graphics.h , winmgim.h and libbgi.a files from the archive.
+Copy the graphics.h and  winbgim.h files   to the include folder  in the MinGW compiler  , which is most likely found here:  c: \ Program Files \ CodeBlocks \ MinGW \ includes \
+Copy the libbgi.a to file  to the lib folder of the MinGW compiler directory  , which is most likely located here: c: \ Program Files \ CodeBlocks \ MinGW \ liub \
+In Code :: Blocks access Settings >> Compiler and debugger >> linker settings
+Click the Add button   in the Link libraries section , then browse and select the libbgi.a file
+On the right side (ie Other linker options ) type the following commands:
+-lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32
+Click OK .
+The description of the graphic functions can be found here:
+
+http://www.cs.colorado.edu/~main/cs1300/doc/bgi/bgi.html
+
+An example graphics test program is here:
+
+#include <iostream>
+#include <graphics.h>
+#include <winbgim.h>
+
+int main ()
+{
+  int gd = DETECT, gm;
+  initgraph (& gd, & gm, "");
+
+  int x = 320, y = 240, r; 
+  for (r = 25; r <= 125; r + = 20)
+      circle (x, y, r);
+
+  getch ();
+  closegraph ();
+  return 0;
+}
+If it works, you can continue to use any graphics and mouse function in the WinBGIm library.
+
+Success!
+
+2. Examples of graphic programs
+Drawing a chessboard using only the primitive line graphics :: on the board
+Drawing the graph of a function, using only the primitive line graph :: on the board
+Drawing a regular polygon, a star, using only the primitive line  graphic :: on the board
+We assume that you can work in graphical mode, on a screen with pixel width * height in which the coordinates of the upper left corner are (0, 0), and of the lower right corner are ( width -1, height -1). In this graphical mode, you have the following graphic primitives
+a graphic function void setcolor (unsigned int c), which sets the color to draw the following lines, until the color changes by another call of this function (initially considered c = 0, default ) c is a color code, which corresponds to a value between 0 and 15, for example 0 = black, 1 = blue, 2 = red, etc.
+a graphical function void setwidth (unsigned int g), which determines the thickness (1 <= g <= 10, default g = 1) of drawing the following lines, until a new call of this function;
+a graphical function void line (unsigned int x1, unsigned int y1, unsigned int x2, unsigned int y2) that draws a line between the coordinate point (x1, y1) and the coordinate point (x2, y2) , in the current color, of current thickness;
+an void setfillcolor function (unsigned int c) , which sets the fill color for the following calls of the fill function below; c is default 0 (black), but can be any value 0 <= c <= 15 ;
+a void fill function (unsigned int x1, unsigned int x2, unsigned int c), which colors (by filling) in the color determined by the setfillcolor function , the closed contour, bordered by a dark polygonal line, having the color c. The coloring begins at the coordinate point (x1, y1), which is supposed to be inside that polygonal line .
+(0.30p) Define an appropriate data structure to represent a regular star with a number of corners (at least 3), with a certain color and thickness edge, with a certain color inside, with a certain size and a a certain „opening” of the corners, with a certain location at a certain angle to the horizontal of the first corner. It can be used for the trigonometric functions sin and cos of math.h .
+(0.90p) Write a function to draw such a star, any, located anywhere and anytime, of any color, etc.
+Click here for the solution.
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+ 
+
+// programul poate fi testat in DevC++, instaland biblioteca grafica WinBGIm
+// sau in Processing 3.0
+// folosind functiile grafice specifice
+
+// presupunem ca dispunem de urmatoarele functii grafice
+
+void setcolor(unsigned int c)
+{
+// stabileste culoarea pentru a desena urmatoarele linii,
+// pana la schimbarea culorii de un alt apel al acestei functii (initial se considera c=0, implicit);
+// c este un cod de culoare, care corespunde unei valori între 0 si 15, de exemplu 0=negru, 1=albastru, 2=rosu etc.
+}
+
+void setwidth(unsigned int g)
+{
+// stabileste grosimea (1<=g<=10, implicit g=1) de desenare a
+// a urmatoarelor linii, pana la un nou apel al acestei functii;
+}
+
+void line(unsigned int x1, unsigned int y1, unsigned int x2, unsigned int y2)
+{
+// deseneaza/traseaza o linie intre punctul de coordonate (x1, y1)
+// si cel de coordonate (x2, y2), in culoarea curenta, de grosimea curenta,
+// adica cele stabilite de functiile de mai sus
+}
+
+void setfillcolor(unsigned int c)
+{
+// stabileste culoarea de umplere pentru urmatoarele apeluri ale functiei fill
+// de mai jos; c este implicit 0 (negru), dar poate fi orice valoarea 0<=c<=15;
+}
+
+void fill_(unsigned int x1, unsigned int x2, unsigned int c)
+{
+// coloreaza (prin umplere) in culoarea stabilita de functia setfillcolor,
+// conturul inchis, marginit de o linie poligonala inchisa, avand culoarea c;
+// colorarea incepe in punctul de coordonate (x1, y1), care se presupune a fi
+// in interiorul acelei linii poligonale.
+}
+
+struct stea
+{
+int xCentru, yCentru; // xc si yc sunt coordonatele centrului stelei,
+// adica ale cercurilor circumscrise celor doua poligoane regulate, formate din colturile stelei,
+// respectiv din punctele interioare
+int nrColturi; // nr de colturi ale stelei
+int raza; // raza cercului mare (unde se afla colutile stelei
+float coef; // un numar subunitar, reprezentand raportul dintre raza mica
+// si raza mare (acest coeficient determina automa cat de „deschisa”
+// sau de „colturoasa” este steaua
+float unghiRotire; // unghiul dintre dreapta Ox si
+// dreapta formata din centrul stelei si primul colt al stelei
+int culoareMargine; // culoarea marginii
+int grosimeMargine; //grosimea marginii
+int culoareStea; // culoarea interiorului stelei, fara margine
+};
+
+void deseneaza(stea Stea)
+{
+// folosim variabile locale, cu denumiri scurte, le initializam
+int xc=Stea.xCentru;
+int yc=Stea.yCentru;
+int n=2*Stea.nrColturi;
+int r=Stea.raza;
+float gama=Stea.unghiRotire;
+// calculam raza pentru cercul format de punctele interioare stelei
+int r2=r*Stea.coef;
+// stabilim elementele de desenare
+// setcolor(Stea.culoareMargine); setwidth(Stea.grosimeMargine);
+// calculam unghiul facut de axa OX cu fiecare dintre punctele ce formeaza steaua (fie ca sunt colturi, fie puncte interioare)
+float alfa=2*3.1415926/n; // pi/n
+
+ 
+
+// folosim doi vectori pentru a pastra in ei coordonatele punctelor din stea
+// (exterioare si interioare)
+// se poate evita folosirea vectorilor,
+// prin memorarea doar a ultimelor doua puncte ale liniei poligonale
+// sau, daca e necesar, se pot memora coordonatele acestor puncte
+// chiar in definitia stelei
+
+#define MAX_PUNCTE 100
+int x[MAX_PUNCTE];
+int y[MAX_PUNCTE];
+int i;
+for (i=0; i<=n; i++)
+{
+if (i%2!=0)
+{
+x[i]=int(xc+r2*cos(alfa*i+gama));
+y[i]=int(yc+r2*sin(alfa*i+gama));
+}
+else
+{
+x[i]=int(xc+r*cos(alfa*i+gama));
+y[i]=int(yc+r*sin(alfa*i+gama));
+}
+}
+for (i=0; i<=n-1; i++)
+{
+line(x[i],y[i],x[i+1],y[i+1]);
+}
+// umplem steaua, plecand din centrul ei
+setfillcolor(Stea.culoareStea);
+fill_(Stea.xCentru,Stea.yCentru,Stea.culoareMargine);
+}
+
+int main()
+{
+// exemplu de initializare a unei stele
+stea S;
+S.xCentru=450;
+S.yCentru=300; // coordonate centru stea
+S.nrColturi=5; // o stea cu 5 colturi
+S.unghiRotire=0.785; // aproximativ pi/4
+S.raza=200; // raza cercului format de colturi va fi 200;
+S.coef=0.5; // punctele interioare vor forma un cerc de raza jumatate din S.raza
+S.culoareMargine=2; // culoarea marginii va fi, de exemplu, rosu
+S.grosimeMargine=3; //grosimea marginii de 3 pixeli
+S.culoareStea=14;// culoarea stelei va fi, de exemplu, galben
+// exemplu program de test
+deseneaza(S);
+cout << „Atentie! Programul cu stea poate fi testat „;
+cout<<„daca dispuneti de acele functii grafice!” << endl;
+
+ 
+
+return 0;
+}
+
+5. Best practices in writing code
+Clean code
+Meaningful names
+Functions
+Comments
+Formatting
+Testing your code
+Summary
+Clean code
+What is clean code? Clean code can be read, and enhanced by a developer other than its original author.
+
+Why writing clean code is important?
+
+The broken windows metaphor
+
+A building that has broken windows looks like nobody cares about it. So other people that pass by stop caring. They allow more windows to become broken. Eventually they actively break them.
+
+This applies in code also.
+
+Meaningful names
+
+Names are everywhere in software. You have to name your :
+
+variables
+functions
+arguments
+classes
+source files etc.
+Because you do so much of it, you’d better do it well.
+
+What follows are some simple rules for creating good names.
+
+Use Intention-Revealing Names
+
+Choosing good names takes time but saves more than it takes.
+
+Change them when you find better ones
+
+The name should answer all the big questions :
+
+why it exists?
+what it does ?
+how it is used ?
+If a name requires a comment, then the name does not reveal its intent.
+
+Example :        instead of :
+
+int d; // elapsed time in days
+
+use :
+
+int elapsedTimeInDays;
+
+Avoid disinformation
+
+avoid words whose entrenched meanings vary from our intended meaning.
+
+hp, aix, and sco could be disinformative would because they are the names of Unix platforms.
+
+do not refer to a grouping of accounts as an accountList unless it’s actually a List.
+
+The word list means something specific to programmers. If the container holding the accounts is not actually a List, it may lead to false conclusions.
+
+Beware of using names which vary in small ways. How long does it take to spot the difference between :
+
+XYZControllerForEfficientHandlingOfStrings and
+
+XYZControllerForEfficientStorageOfStrings
+
+Don’t change one name in an arbitrary way just to satisfy a compiler or interpreter.
+
+Number-series naming (a1, a2, .. aN) is the opposite of intentional naming.
+
+Such names are not disinformative—they are noninformative.
+
+Example:
+
+public static void copyChars(char a1[], char a2[]) {
+
+   for (int i = 0; i < a1.length; i++) {
+        a2[i] = a1[i];
+   }
+}
+
+public static void copyChars(char source[], char destination[]) {
+   for (int i = 0; i < source.length; i++) {
+       destination[i] = source[i];
+   }
+}
+Use Pronounceable Names
+
+Humans are good at words. A significant part of our brains is dedicated to the concept of words. And words are, by definition, pronounceable. So make your names pronounceable.
+
+Use names composed of verbs and nouns rather than using abbreviations
+
+Use Searchable Names
+
+Avoid using single-letter names ( you should use them only as local variables inside short methods)
+
+The length of a name should correspond to the size of its scope.
+
+Example :
+
+int e = 0;
+
+The use of the variable e is hard to find.
+
+Avoid using numeric constants.
+
+It’s easier to search for the usage of MAX_CLASSES_PER_STUDENT, than for the number 7, because the number 7 can have different meanings in different contexts.
+
+original source code :
+
+for (int j=0; j<34; j++) {
+    s += (t[j]*4)/5;
+}
+refactored source code :
+
+int realDaysPerIdealDay = 4;
+const int WORK_DAYS_PER_WEEK = 5;
+int sum = 0;
+for (int j=0; j < NUMBER_OF_TASKS; j++) {
+    int realTaskDays = taskEstimate[j] * realDaysPerIdealDay;
+    int realTaskWeeks = (realTaskDays / WORK_DAYS_PER_WEEK);
+        sum += realTaskWeeks;
+}
+Avoid Mental Mapping
+
+Readers shouldn’t have to mentally translate your names into other names they already know.
+
+Avoid choosing variable names such as : a, b, x1,y.
+
+A loop counter may be named i or j or k (though never l!) if its scope is very small and no other names can conflict with it. This is because those single-letter names for loop counters are traditional.
+
+In most of the situations single-letter names are a poor choice.
+
+Don’t use the name c because a and b were already taken.
+
+Method Names
+
+Methods should have verb or verb phrase names, describing the action they execute.
+
+Example :  postPayment, deletePage, save, create, updateCustomer.
+
+Accessors should be named for their value and prefixed with get, set.
+
+string name = employee.getName();
+
+customer.setName(„mike”);
+
+if (paycheck.isPosted())…
+
+Pick One Word per Concept
+
+Pick one word for one abstract concept and stick with it, in order to ensure the consistency of your system.
+
+Example :
+
+fetch
+
+retrieve
+
+get
+
+Add Meaningful Context
+
+Place the chosen names in context for your reader by enclosing them in well-named data structures or functions. When necessary, you can prefix the as a last resort.
+
+Example :
+
+firstName, lastName;
+
+street, houseNumber;
+
+city, state, zipcode;
+
+Do they form an address?
+
+You can add context by using prefixes: addrFirstName, addrLastName, addrState, etc.
+
+Better : use a data structure named Address.
+
+Conclusion
+
+What is difficult in choosing good names?
+
+The hardest thing about choosing good names is that it requires good descriptive skills and a shared cultural background ( is a teaching issue rather than a technical, business, or management issue).
+
+Follow some of these rules and see whether you don’t improve the readability of your code. It will pay off in the short term and continue to pay in the long run.
+
+Functions
+
+First rule:
+
+Functions should be small !
+
+Second rule:
+
+Functions should be smaller than that !
+
+Blocks and Indenting
+
+Blocks within if statements, else statements, while statements, and so on should be one line long.
+
+If they are longer, introduce a new function !
+
+This keeps the enclosing function small and adds documentary value because the function called within the block can have a nicely descriptive name.
+
+Functions should not be large enough to hold nested structures. Therefore, the indent level of a function should not be greater than one or two.
+
+This makes the functions easier to read and understand.
+
+Functions should do one thing ! (single responsibility principle)
+
+How to test if a functions does only one thing :
+
+Should have only one answer for the question : “What does the function do?”
+If you can extract another function from it with a name that is not merely a restatement of its implementation
+Reading Code from Top to Bottom: The Stepdown Rule
+
+The code should be read like a top-down narrative
+
+Use Descriptive Names
+
+It’s nothing wrong in introducing a long name.
+
+A long descriptive name is better than a short enigmatic name.
+
+A long descriptive name is better than a long descriptive comment.
+
+Use a naming convention that allows multiple words to be easily read in the function names.
+
+Example : calculateEmployeeSalaryBonus
+
+Be consistent in your names ! Use the same phrases, nouns, and verbs in the function names you choose for your modules.
+
+Function Arguments
+
+Based on the number of arguments, the functions can be :
+
+Niladic – zero number of arguments (ideal case)
+
+Monadic
+
+Dyadic
+
+Triadic – should be avoided
+
+Polyadic – shouldn’t be used
+
+Common Monadic Forms
+
+Common reasons to pass a single argument into a function :
+
+You may be asking a question about that argument.
+
+boolean fileExists(“MyFile”)
+
+You may be operating on that argument, transforming it into something else and  returning it.
+
+InputStream fileOpen(“MyFile”)
+
+Other case for monadic forms : events.
+
+In this form there is an input argument but no output argument.
+
+The overall program is meant to interpret the function call as an event and use the argument to alter the state of the system.
+
+void passwordAttemptFailedNtimes(int attempts)
+
+Flag Arguments – avoid using them
+
+Passing a boolean into a function is a truly terrible practice.
+
+It violates the single responsibility principle for the function ( the function does one thing if the flag is true and another if the flag is false).
+
+It immediately complicates the signature of the method.
+
+Dyadic Functions
+
+Dyadic functions are harder to understand than monadic functions.
+
+writeField(name)
+
+writeField(output-Stream, name)
+
+There are cases, of course, where two arguments are appropriate.
+
+Point p = new Point(0,0);
+
+Triads
+
+Functions that take three arguments are significantly harder to understand than dyads.
+
+You got to have a very good reason for introducing a function that takes 3 arguments.
+
+Argument Objects
+
+When a function seems to need more than two or three arguments, it is likely that some of those arguments ought to be wrapped into a data structure of their own.
+
+Circle makeCircle(double x, double y, double radius);
+
+Circle makeCircle(Point center, double radius);
+
+X and Y are part of a concept that deserve a name of its own, so wrapping them in a separate data structure is a good idea.
+
+Conclusion
+
+If you follow the previously presented rules, your functions will be:
+
+short
+well named
+nicely organized
+Never forget that your real goal is to tell the story of the system, and that the functions you write need to fit cleanly together into a clear and precise language to help you with that telling.
+
+Comments
+
+Comments are not “pure good”.  Comments are, at best, a necessary evil.
+
+The proper use of comments is to compensate for our failure to express ourself in code. Comments are always failures.
+
+We must have them because we cannot always figure out how to express ourselves without them, but their use is not a cause for celebration.
+
+So when you find yourself in a position where you need to write a comment, think it through and see whether there isn’t some way to turn the tables and express yourself in code.
+
+Comments Do Not Make Up for Bad Code
+
+One of the more common motivations for writing comments is bad code.
+
+Rather than spend your time writing the comments that explain the mess you’ve made, spend it cleaning that mess.
+
+Explain Yourself in Code
+
+There are certainly times when code makes a poor vehicle for explanation, but most of the time it’s easy to express yourself through code
+
+Which would you rather see? This:
+
+// Check to see if the employee is eligible for full benefits
+
+if ((employee.flags & HOURLY_FLAG) &&
+
+(employee.age > 65))
+
+Or this?
+
+if (employee.isEligibleForFullBenefits())
+
+It takes only a few seconds of thought to explain most of your intent in code. In many cases it’s simply a matter of creating a function that says the same thing as the comment you want to write.
+
+Good Comments
+
+Some comments are necessary or beneficial.
+
+Keep in mind, that the only truly good comment is the comment you found a way not to write.
+
+Bad Comments
+
+Most comments fall into this category.
+
+Usually they are excuses for poor code or justifications for insufficient decisions.
+
+Rule : Don’t Use a Comment When You Can Use a Function or a Variable
+
+Position Markers
+Sometimes programmers like to mark a particular position in a source file.
+
+// Actions //////////////////////////////////
+
+There are rare times when it makes sense to gather certain functions together beneath a banner like this.
+
+Closing Brace Comments
+Sometimes programmers will put special comments on closing braces.
+
+If you find yourself wanting to mark your closing braces, try to shorten your functions instead.
+
+Commented-Out Code
+Few practices are as odious as commenting-out code.
+
+Nonlocal Information
+If you must write a comment, then make sure it describes the code it appears near.
+
+Function Headers
+Short functions don’t need much description.
+
+A well-chosen name for a small function that does one thing is usually better than a comment header.
+
+Conclusion
+
+When you feel the need to introduce a new comment, it’s better to  extract a function with a descriptive name or introduce variable
+
+Formatting
+
+Vertical Formatting
+
+How big should a source file be?
+
+Vertical Openness Between Concepts
+
+Nearly all code is read left to right and top to bottom.
+
+Each line represents an expression or a clause, and each group of lines represents a complete thought.
+
+Those thoughts should be separated from each other with blank lines.
+
+Vertical Distance
+
+Concepts that are closely related should be kept vertically close to each other .
+
+Variable Declarations.
+
+Variables should be declared as close to their usage as possible.
+
+Because our functions are very short, local variables should appear a the top of each function.
+
+Dependent Functions.
+
+If one function calls another, they should be vertically close, and the caller should be above the callee, if at all possible.
+
+This gives the program a natural flow.
+
+Indentation
+
+To make the hierarchy of scopes visible, we indent the lines of source code in proportion to their position in the hierarchy.
+
+Statements at the level of the file are not indented at all.
+
+Methods within a class are indented one level to the right of the class.
+
+Implementations of those methods are implemented one level to the right of the method declaration.
+
+Block implementations are implemented one level to the right of their containing block, and so on.
+
+Testing your code
+
+The Three Laws of TDD – test driven development
+
+First Law You may not write code until you have written a failing unit test.
+
+Second Law You may not write more of a unit test than is sufficient to fail, and not compiling is failing.
+
+Third Law You may not write more production code than is sufficient to pass the currently failing test.
+
+Summary
+
+Comments:
+
+C1: Inappropriate Information( ex: author, last modified-date)
+
+C2: Obsolete Comment
+
+C3: Redundant Comment
+
+A comment is redundant if it describes something that adequately describes itself.
+
+i++; // increment I
+
+C4: Poorly Written Comment
+
+If you are going to write a comment, take the time to make sure it is the best comment you can write
+
+C5: Commented-Out Code
+
+Functions
+
+F1: Too Many Arguments
+
+Functions should have a small number of arguments.
+
+F2: Output Arguments
+
+Readers expect arguments to be inputs, not outputs. If your function must change the state of something, have it change the state of the object it is called on.
+
+F3: Flag Arguments
+
+Boolean arguments states that the function does more than one thing.
+
+F4: Dead Function
+
+Methods that are never called should be discarded.
+
+General
+
+G1: Inconsistency
+
+If you do something a certain way, do all similar things in the same way.
+
+G2: Function Names Should Say What They Do
+
+Date newDate = date.add(5);
+
+Would you expect this to add five days to the date? Or is it weeks, or hours?
+
+Better use : addDaysTo or increaseByDays.
+
+G3: Replace Magic Numbers with Named Constants
+
+The number 86,400 should be hidden behind the constant SECONDS_PER_DAY.
+
+G4: Encapsulate Conditionals
+
+Boolean logic is hard enough to understand without having to see it in the context of an if
+
+or while statement.
+
+Extract functions that explain the intent of the conditional.
+
+Example:
+
+if (shouldBeDeleted(timer))
+
+is preferable to
+
+if (timer.hasExpired() && !timer.isRecurrent())
+
+G5: Functions Should Do One Thing
+
+It is often tempting to create functions that have multiple sections that perform a series of operations.
+
+Functions of this kind do more than one thing, and should be converted into many smaller functions, each of which does one thing.
+
+Names
+
+N1: Choose Descriptive Names
+
+This is not just a “feel-good” recommendation. Names in software are 90 percent of
+
+what make software readable. You need to take the time to choose them wisely and keep
+
+them relevant.
+
+N2: Use Long Names for Long Scopes
+
+The length of a name should be related to the length of the scope. You can use very short
+
+variable names for tiny scopes, but for big scopes you should use longer names.
+
+N3: Avoid Encodings
+
+Names should not be encoded with type or scope information
+
+Bibliography
+
+The Clean Coder: A Code of Conduct for Professional Programmers (Robert C. Martin Series)
+
+Clean Code: A Handbook of Agile Software Craftsmanship (Robert C. Martin Series)
+
+Plan
+Structure type / registration – revision
+Simple linked lists
+Doubly linked lists
+Stacks
+Queues
+struct type
+revision from laboratory 3
+Simple linked lists
+(LIFO, simple declaration)
+
+
+
+Reading a simple linked list
+void readSimpleList(listaSimpla& L) {
+    unsigned int nrElements;
+    cout<<"Number of elements: ";
+    cin>>nrElements;
+    tipDate element;
+    L=NULL; listaSimpla p;
+    for (unsigned int i=1; i<=nrElements; i++)
+    {
+        cout<<"Give the "<<i<<"-th element: ";
+        cin>>element; p=new nod; p->info=element;
+        p->urm=L;L=p;
+    }
+}
+Displaying a simple linked list
+void displatSimpleList(listaSimpla L) {
+    listaSimpla p; p=L;
+    while (p!=NULL) {
+        cout<<p->info<<", ";
+        p=p->urm;
+    }
+    cout<<"\n";
+}
+An example program
+int main() {
+    cout<<"List program\n\n"; listaSimpla L;
+    cout<<"Reading:\n"; readSimpleList(L);
+    cout<<"Displaying:\n"; displaySimpleList(L);
+    return 0; 
+}
+
+
+Doubly linked list
+(a structured has been used, the mechanism is FIFO)
+
+#define tipDate int
+struct nod {
+    tipDate info;
+    nod* urm;
+    nod* prec;
+};
+
+struct listaDubla {
+    nod* prim; nod* ultim;
+    unsigned int lungime;
+};
+List initializing
+void initialiseDoublyList(listaDubla& L)
+{
+    L.lungime=0;
+    L.prim=NULL; L.ultim=NULL;
+}
+Adding an element to the list
+void addToDoublyListElement(listaDubla& L, tipDate element) {
+    if (L.lungime==0) {
+        L.prim=new nod; L.prim->info=element;
+        L.prim->urm=NULL; L.prim->prec=NULL;
+        L.ultim=L.prim; L.lungime++; 
+    }
+    else {
+        nod* p; p=new nod;
+        p->info=element; p->urm=NULL;
+        p->prec=L.ultim; L.lungime++;
+        L.ultim->urm=p; L.ultim=p;
+    }
+}
+Reading a doubly linked list
+void readDoublyList(listaDubla& L)
+{
+    unsigned int nrElements;
+    cout<<"Number of elements: ";
+    cin>>nrElements;
+    tipDate element;
+    for (unsigned int i=1; i<=nrElements; i++)
+    {
+        cout<<"Give the "<<i<<"-th element: ";
+        cin>>element;
+        addToDoublyListElement(L, element);
+    }
+}
+Displaying a doubly linked list
+void displayDoublyList(listaDubla L)
+{
+    nod* p=L.prim;
+    while (p!=NULL)
+    {
+        cout<<p->info<<", ";
+        p=p->urm;
+    }
+    cout<<"\n";
+}
+Function main() and example program
+#include <iostream>
+using namespace std;
+#define tipDate int
+int main()
+{
+    cout<<"Program with doubly linked list\n\n";
+    listaDubla L;
+    initialiseDoublyList(L);
+    cout<<"Reading:\n";
+    readDoublyList(L);
+    cout<<"Displaying:\n";
+    displayDoublyList(L);
+    return 0;
+}
+Program execution 
+
+
+Deleting an element
+void deleteElement(listaDubla L, unsigned int pozitieElement) { 
+// deletes an element on an interior position
+    nod* p=L.prim;
+    nod* q; nod* r;
+    for (unsigned int i=1; i<=elementPosition-1; i++)
+        p=p->urm;
+    q=p->prec; r=p->urm;
+    q->urm=r; r->prec=q;
+    delete p;
+    L.lungime--;
+}
+Program execution
+
+
+ 
+
+Binary search trees
+Proposal 1: Write an efficient data structure that can be used for binary trees (containing integer number in nodes)
+Proposal 2: Design a simple application that can process binary trees.
+Propriety
+Each node contains an element that is higher than any other element from any node of the left subtree, and smaller or equal than any element from the right subtree (if exists).
+
+Recursively adding a new element in a binary search tree
+if the tree is NULL, then a new node is created where that element is added;
+if the tree is not NULL, then:
+if the root element is > the new element, this is added in the left subtree;
+if not, it’s added in the right subtree.
+Binary trees declaration(search)
+typedef int tipDate;
+struct nod {
+    tipDate info;
+    struct nod *st; struct nod *dr;
+};
+typedef nod * arbore;
+Binary search trees – initialisation
+int isNullTree(tree a)
+{ 
+   return (a==NULL); 
+}
+
+void initTree(tree& a) 
+{ 
+   if (!isNullTree(a)) a=NULL; 
+}
+Adding an element in a binary search tree
+bool addToTreeElement(tree& a, tipDate el) {
+    if (isNullTree(a)) {
+        a=new nod;
+        if (!a) return false;
+        a->info = el; a->st = NULL; a->dr = NULL;
+        return true;
+    }
+    else if (el < a->info)
+        return addToTreeElement(a->st, el);
+    else
+        return addToTreeElement(a->dr, el);
+}
+Searching an element in the tree
+bool isElementInTree(tree a, tipDate el)
+{
+    if (!isNullTree(a)) // or if (a)
+    {
+        if (a->info==el) return true;
+        else 
+          if (el<a->info) 
+             return isElementInTree(a->st, el);
+          else 
+             return isElementInTree(a->dr, el);
+    }
+    else
+        return false;
+}
+Crossing binary trees
+Preorder:  root, left subtree, right subtree
+void preorderCrossing(tree a)
+{
+    if (!isNullTree(a))
+    {
+        cout<<a->info<<", ";
+        preorderCrossing(a->st);
+        preorderCrossing(a->dr);
+    }
+}
+Postorder: left subtree, right subtree, root
+void postorderCrossing(arbore a)
+{
+    if (!isNullTree(a))
+    {
+        postorderCrossing(a->st);
+        postorderCrossing(a->dr);
+        cout<<a->info<<", ";
+    }
+}
+Inorder: left subtree, root, right subtree
+void inorderCrossing(arbore a)
+{
+    if (!isNullTree(a))
+    {
+        inorderCrossing(a->st);
+        cout<<a->info<<", ";
+        inorderCrossing(a->dr);
+    }
+}
+Demo program
+int main() {
+    cout << "Binary search trees\n\n";
+    tree a; initTree(a);
+    unsigned int i; unsigned int n;
+    tipDate x;
+    cout<<"Number of tree elements: "; cin>>n;
+    for (i=1; i<=n; i++) {
+        cout<<"Give the "<<i<<"-th element: ";
+        cin>>x; addToTreeElement(a,x); 
+    }
+    cout<<"\nThe elements crossed in inorder are ordered ascending:\n";
+    inorderCrossing(a);
+    return 0; 
+}
+Program execution
+
+
+Graphs
+Basic notions
+Representation
+Prim’s algorithm
+Propriety
+A graph (undirected or directed) is an ordered pair of sets G=(V,E).
+The V set is a non-null set, finite of vertices/nodes of the graph.
+The set E is a set of vertices pairs of the graph.
+When it comes to undirected graphs, the pairs of vertices of the set E are unordered and they are called edges. The unordered pair formed from the vertices x and y is noted as [x,y]; the vertices x and y are called the ends of the edge [x,y].
+In case of directed graphs, the pairs of vertices from the E set are ordererd and they are called arcs.
+If an arc or an edge with ends x and y exist, then the vertices x and y are adjacent; each end of an edge/arc is considered incident to that respective edge/arc.
+We will consider that the ends of an edge, respectively of an arc are distinct (the graph does not have loops).
+
+Visual representation
+
+
+Adjacency matrix
+Let G=(V,E) an undirected graph, with n vertices and m edges. The adjacency matrix associated to G is a square matrix of order n, with n elements:
+
+
+
+
+
+Implementation examples:
+int a[100][100];
+.................................
+cout<<"n="; cin>>n;
+//the values of the elements above the main diagonal are read
+for (i=1;i<=n-l;i++)
+ for (j=i+l; j<=n; j++) { 
+   cin>>a[i][j]; 
+   //and are transferred below the main diagonal
+   a[j][i]=a[i][j];
+}
+..............................
+cin>>n; //node number
+cin>>m; //edge number
+for (i=1;i<=n;i++)
+  for (j=1;j<=n;j++)
+    a[i][j]=0;
+for (i=1;i<=m;i++)
+{
+  cout<<"give the ends of the edge"<<i; 
+  cin>>x >>y;
+  a[x][y]=1;
+  a[y][x]= 1;
+}
+Adjacency lists
+Representation of the graph G by adjacency list is as follows::
+
+specyficate the number of vertices, n;
+for each vertex i, it is specified the list Li of its neighbours, that means the list of nodes adjacent with node i.
+
+Implementation example:
+typedef struct nod{
+	int inf;
+	nod *urm;
+}AD;
+AD *L[N];  //neighbours' lists
+void read()
+{
+	int i,j,k; 
+        AD *x;
+	cin>>n; //number of vertices
+        cin>>m; //number of edges
+        //allocate addresses for neighbours' lists
+	for(i=1;i<=n;i++) {
+          L[i]=new AD; 
+          L[i]->urm=NULL;
+	}
+	for (k=1;k<=m;k++)
+	{	
+          cin>>i>>j;
+	  //add j in the i's neighbours' list
+	  x=new AD; x->inf=j; x->urm=L[i]->urm; L[i]->urm=x;  
+	  //add i in the j's neighbours' list
+	  x=new AD; x->inf=i; x->urm=L[j]->urm; L[j]->urm=x;  	
+	}
+}
+Caută după:
+Căutare…
+ARTICOLE RECENTE
+Stire
+ARHIVE
+octombrie 2020
+CATEGORII
+Postari in limba romana
+META
+Autentificare
+Intrări RSS
+WordPress.org
+© Copyright 2021 Practică – Introducere în programare / Practice – Introduction to Programming. Education Zone by Rara Theme. Powered by WordPress.
+
+Stiri
+Administrativ
+Cursuri
+Curs 1. Introducere
+Curs 2. Elemente de bază în C/C++ (I)
+Curs 3. Elemente de bază în C/C++ (II)
+Laboratoare
+Laborator 1. Evaluare inițială
+Laborator 2. Exerciții cu date simple
+Laborator 3. Operații pe biți
+Bibliografie
+English
+Quick Links
+News
+Management
+Courses
+Course 1. Programming paradigms, history, compiling and interpreting
+Course 2 – Basic concepts in C++
+Course 3. Functions, arrays and pointers
+Laboratories
+Laboratory 1
+Laboratory 2
+Laboratory 3
+Romana
+Bibliography

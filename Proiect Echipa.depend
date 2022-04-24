@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1547512071 source:h:\proiect echipa\main.cpp
+	<iostream>
+	<graphics.h>
+	<winbgim.h>
+	<fstream>
+	<unistd.h>
+
+1610638486 source:d:\trash pdf facultate\proiect echipa\main.cpp
+	<iostream>
+	<graphics.h>
+	<winbgim.h>
+	<fstream>
+	<unistd.h>
+
